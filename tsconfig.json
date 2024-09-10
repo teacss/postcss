@@ -1,0 +1,42 @@
+{
+	"compilerOptions": {
+		"target": "ES2020",
+		"useDefineForClassFields": true,
+		"lib": ["ES2020", "DOM", "DOM.Iterable"],
+		"module": "ESNext",
+		"skipLibCheck": true,
+		"types": ["@types/bun", "@types/web"],
+		"typeRoots": ["./node_modules/@types", "./types"],
+		"outDir": "build",
+		"moduleResolution": "bundler",
+		"moduleDetection": "force",
+		"allowImportingTsExtensions": true,
+		"allowSyntheticDefaultImports": true,
+		"forceConsistentCasingInFileNames": true,
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"allowJs": true,
+		"noEmit": true,
+		"jsx": "react",
+		"paths": {
+			"@teacss/postcss-breakpoints": ["./packages/breakpoints/src"],
+			"@teacss/postcss-whitespace": ["./packages/whitespace/src"],
+			"setupTests": ["./tests/setupTests.tsx"]
+		},
+		"strict": true,
+		"composite": true,
+		"downlevelIteration": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"noFallthroughCasesInSwitch": true
+	},
+	"exclude": ["build", "dist", "node_modules"],
+	"include": [
+		"packages/*/src/**/*.@(js|jsx|ts|tsx)",
+		"packages/*/src/**/*.d.ts",
+		"packages/*/tests/**/*.@(js|jsx|ts|tsx)",
+		"packages/*/tests/**/*.d.ts",
+		"tests/**/*.@(js|jsx|ts|tsx)",
+		"tests/**/*.d.ts"
+	]
+}

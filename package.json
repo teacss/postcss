@@ -1,0 +1,45 @@
+{
+	"private": true,
+	"name": "@teacss/postcss",
+	"version": "0.1.0",
+	"license": "MIT",
+	"description": "postcss plugins for teacss",
+	"author": "Billgo <hi@billgo.me>",
+	"type": "module",
+	"bugs": "https://github.com/teacss/postcss/issues",
+	"repository": "git+ssh://git@github.com:teacss/postcss.git",
+	"scripts": {
+		"publish": "bunx lerna publish",
+		"build": "bunx lerna run build",
+		"story": "bunx kill-port 6006 && storybook dev -p 6006",
+		"start": "bun run story",
+		"docs": "bunx rimraf storybook-static && storybook build"
+	},
+	"workspaces": ["packages/*"],
+	"devDependencies": {
+		"@biomejs/biome": "1.8.3",
+		"@devjskit/biome-config": "^0.1.6",
+		"@devjskit/copy-files": "^1.0.0",
+		"@devjskit/cross-env": "^1.0.0",
+		"@devjskit/kill-port": "^1.0.0",
+		"@devjskit/rimraf": "^1.0.0",
+		"@happy-dom/global-registrator": "^15.7.3",
+		"@storybook/addon-essentials": "^8.2.9",
+		"@storybook/addon-links": "^8.2.9",
+		"@storybook/react": "^8.2.9",
+		"@storybook/react-vite": "^8.2.9",
+		"@types/bun": "^1.1.8",
+		"@types/react": "^18.3.5",
+		"@types/react-dom": "^18.3.0",
+		"@types/web": "^0.0.162",
+		"react": "^18.3.1",
+		"react-dom": "^18.3.1",
+		"lerna": "^8.1.8",
+		"storybook": "^8.2.9",
+		"storybook-react-rsbuild": "^0.0.15",
+		"typescript": "^5.5.4"
+	},
+	"engines": {
+		"bun": ">= 1.0"
+	}
+}
