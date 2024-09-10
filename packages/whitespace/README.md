@@ -1,3 +1,2 @@
-# @tealess/accordion
+# @teacss/postcss-whitespace
 
-Scaffolding Your First Tealess Component

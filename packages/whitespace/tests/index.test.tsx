@@ -1,8 +1,7 @@
 import { afterEach, beforeEach, expect, test } from "bun:test";
+import assert from "node:assert";
+import React, { act } from "react";
 import { createRoot } from "react-dom/client";
-import { act } from "react-dom/test-utils";
-import assert from "assert";
-import React from "react";
 
 const App = () => {
   return (
