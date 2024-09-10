@@ -4,6 +4,6 @@
 // learn more: https://github.com/testing-library/jest-dom
 import { GlobalRegistrator } from "@happy-dom/global-registrator";
 
-global.IS_REACT_ACT_ENVIRONMENT = true;
+(global as any).IS_REACT_ACT_ENVIRONMENT = true;
 
 GlobalRegistrator.register();

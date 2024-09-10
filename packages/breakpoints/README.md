@@ -1,3 +1,1 @@
-# @tealess/accessible-icon
-
-Scaffolding Your First Tealess Component
+# @teacss/postcss-breakpoints
