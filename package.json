@@ -1,33 +1,33 @@
 {
-	"private": true,
-	"name": "@teacss/postcss",
-	"version": "0.1.0",
-	"license": "MIT",
-	"description": "postcss plugins for teacss",
-	"author": "Billgo <hi@billgo.me>",
-	"type": "module",
-	"bugs": "https://github.com/teacss/postcss/issues",
-	"repository": "git+ssh://git@github.com:teacss/postcss.git",
-	"scripts": {
-		"publish": "bunx lerna publish",
-		"build": "bunx lerna run build",
-		"story": "bunx kill-port 6006 && storybook dev -p 6006",
-		"start": "bun run story",
-		"docs": "bunx rimraf storybook-static && storybook build"
-	},
-	"workspaces": ["packages/*"],
-	"devDependencies": {
-		"@biomejs/biome": "1.9.4",
-		"@devjskit/biome-config": "^0.1.14",
-		"@devjskit/copy-files": "^1.1.1",
-		"@devjskit/cross-env": "^1.0.0",
-		"@devjskit/kill-port": "^1.0.0",
-		"@devjskit/rimraf": "^1.0.0",
-		"@types/bun": "^1.2.0",
-		"lerna": "^8.1.9",
-		"typescript": "^5.7.3"
-	},
-	"engines": {
-		"bun": ">= 1.0"
-	}
+  "private": true,
+  "name": "@teacss/workspace",
+  "version": "0.1.0",
+  "license": "MIT",
+  "description": "postcss plugins",
+  "author": "Billgo <hi@billgo.me>",
+  "type": "module",
+  "bugs": "https://github.com/teacss/postcss/issues",
+  "repository": "git+ssh://git@github.com:teacss/postcss.git",
+  "scripts": {
+    "publish": "bunx lerna publish",
+    "build": "bunx lerna run build",
+    "story": "bunx kill-port 6006 && storybook dev -p 6006",
+    "start": "bun run story",
+    "docs": "bunx rimraf storybook-static && storybook build"
+  },
+  "workspaces": ["packages/*"],
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@devjskit/biome-config": "^0.1.14",
+    "@devjskit/copy-files": "^1.1.1",
+    "@devjskit/cross-env": "^1.0.0",
+    "@devjskit/kill-port": "^1.0.0",
+    "@devjskit/rimraf": "^1.0.0",
+    "@types/bun": "^1.2.0",
+    "lerna": "^8.1.9",
+    "typescript": "^5.7.3"
+  },
+  "engines": {
+    "bun": ">= 1.0"
+  }
 }
