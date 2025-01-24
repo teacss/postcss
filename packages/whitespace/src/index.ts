@@ -15,9 +15,7 @@ const postcssWhitespace: any = () => ({
   },
   AtRule(rule: any) {
     // Remove line breaks before and after the rule
-    // biome-ignore lint/performance/noDelete: <explanation>
     delete rule.raws.before;
-    // biome-ignore lint/performance/noDelete: <explanation>
     delete rule.raws.after;
   },
   Rule(rule: any) {
