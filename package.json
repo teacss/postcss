@@ -10,10 +10,7 @@
   "repository": "git+ssh://git@github.com:teacss/postcss.git",
   "scripts": {
     "publish": "bunx lerna publish",
-    "build": "bunx lerna run build",
-    "story": "bunx kill-port 6006 && storybook dev -p 6006",
-    "start": "bun run story",
-    "docs": "bunx rimraf storybook-static && storybook build"
+    "build": "bunx lerna run build"
   },
   "workspaces": ["packages/*"],
   "devDependencies": {

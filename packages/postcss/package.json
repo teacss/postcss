@@ -1,0 +1,49 @@
+{
+  "name": "@teacss/postcss",
+  "version": "0.1.0-alpha.0",
+  "license": "MIT",
+  "sideEffects": false,
+  "description": "plugins for postcss",
+  "author": "Billgo <hi@billgo.me>",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": ["dist", "README.md"],
+  "scripts": {
+    "prepublishOnly": "bun run build",
+    "build": "bunx rimraf dist && bun run build:esm && bun run build:bun",
+    "build:bun": "bun run bun.build.mjs",
+    "build:esm": "bunx tsup"
+  },
+  "dependencies": {
+    "@teacss/postcss-breakpoints": "^0.1.0-alpha.0",
+    "@teacss/postcss-whitespace": "^0.1.0-alpha.0",
+    "autoprefixer": "^10.4.20",
+    "postcss-combine-duplicated-selectors": "^10.0.3",
+    "postcss-custom-media": "^11.0.5",
+    "postcss-discard-comments": "^7.0.3",
+    "postcss-discard-duplicates": "^7.0.1",
+    "postcss-discard-empty": "^7.0.0",
+    "postcss-discard-unused": "^7.0.3",
+    "postcss-import": "^16.1.0",
+    "postcss-nesting": "^13.0.1"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@devjskit/biome-config": "^0.1.14",
+    "@devjskit/rimraf": "^1.0.0",
+    "@types/bun": "^1.2.0",
+    "@types/postcss-import": "^14.0.3",
+    "@types/web": "^0.0.198",
+    "postcss": "^8.5.1",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.3"
+  },
+  "peerDependencies": {
+    "postcss": "^8.4.27"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  }
+}
