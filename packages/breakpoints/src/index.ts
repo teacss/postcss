@@ -2,6 +2,10 @@ import { AtRule, type Rule } from "postcss";
 
 const cache = new WeakMap();
 
+export interface Theme {
+  breakpoints?: Record<string, string>;
+}
+
 const postcssBreakpoints = (opts = { xs: "520px", sm: "768px", md: "1024px", lg: "1280px", xl: "1640px" }) => ({
   postcssPlugin: "postcss-breakpoints",
   Rule(rule: Rule) {
