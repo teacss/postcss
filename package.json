@@ -17,27 +17,15 @@
 	},
 	"workspaces": ["packages/*"],
 	"devDependencies": {
-		"@biomejs/biome": "1.8.3",
-		"@devjskit/biome-config": "^0.1.6",
-		"@devjskit/copy-files": "^1.0.0",
+		"@biomejs/biome": "1.9.4",
+		"@devjskit/biome-config": "^0.1.14",
+		"@devjskit/copy-files": "^1.1.1",
 		"@devjskit/cross-env": "^1.0.0",
 		"@devjskit/kill-port": "^1.0.0",
 		"@devjskit/rimraf": "^1.0.0",
-		"@happy-dom/global-registrator": "^15.7.3",
-		"@storybook/addon-essentials": "^8.2.9",
-		"@storybook/addon-links": "^8.2.9",
-		"@storybook/react": "^8.2.9",
-		"@storybook/react-vite": "^8.2.9",
-		"@types/bun": "^1.1.9",
-		"@types/react": "^18.3.5",
-		"@types/react-dom": "^18.3.0",
-		"@types/web": "^0.0.162",
-		"react": "^18.3.1",
-		"react-dom": "^18.3.1",
-		"lerna": "^8.1.8",
-		"storybook": "^8.2.9",
-		"storybook-react-rsbuild": "^0.0.15",
-		"typescript": "^5.6.2"
+		"@types/bun": "^1.2.0",
+		"lerna": "^8.1.9",
+		"typescript": "^5.7.3"
 	},
 	"engines": {
 		"bun": ">= 1.0"
