@@ -2,11 +2,7 @@ import { AtRule, type Rule } from "postcss";
 
 const cache = new WeakMap();
 
-export interface Theme {
-  breakpoints?: Record<string, string>;
-}
-
-const postcssBreakpoints = (opts = { xs: "520px", sm: "768px", md: "1024px", lg: "1280px", xl: "1640px" }) => ({
+const postcssBreakpoints = (opts: Record<string, string>) => ({
   postcssPlugin: "postcss-breakpoints",
   Rule(rule: Rule) {
     if (rule.parent && rule.parent.type === "atrule" && (rule.parent as any).name === "breakpoints") {
