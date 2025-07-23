@@ -10,16 +10,4 @@ import postcssDiscardUnused from "postcss-discard-unused";
 import postcssImport from "postcss-import";
 import postcssNesting from "postcss-nesting";
 
-export {
-  postcssBreakpoints,
-  postcssWhitespace,
-  postcssAutoprefixer,
-  postcssCombineDuplicatedSelectors,
-  postcssCustomMedia,
-  postcssDiscardComments,
-  postcssDiscardDuplicates,
-  postcssDiscardEmpty,
-  postcssDiscardUnused,
-  postcssImport,
-  postcssNesting,
-};
+export { postcssBreakpoints, postcssWhitespace, postcssAutoprefixer, postcssCombineDuplicatedSelectors, postcssCustomMedia, postcssDiscardComments, postcssDiscardDuplicates, postcssDiscardEmpty, postcssDiscardUnused, postcssImport, postcssNesting };

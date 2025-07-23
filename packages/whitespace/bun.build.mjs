@@ -4,5 +4,4 @@ await Bun.build({
   target: "browser", // default
   format: "esm",
   minify: false,
-  external: ["react", "react-dom"],
 });
