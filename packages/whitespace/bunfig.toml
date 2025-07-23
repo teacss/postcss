@@ -1,2 +1,3 @@
 [install]
+saveTextLockfile = false
 registry = { token = "$NPM_TOKEN",url = "https://registry.npmjs.org" }
