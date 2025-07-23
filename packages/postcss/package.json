@@ -1,6 +1,6 @@
 {
   "name": "@teacss/postcss",
-  "version": "0.1.0-alpha.1",
+  "version": "0.1.0",
   "license": "MIT",
   "sideEffects": false,
   "description": "plugins for postcss",
@@ -32,8 +32,8 @@
     "build:esm": "bunx tsup"
   },
   "dependencies": {
-    "@teacss/postcss-breakpoints": "^0.1.0-alpha.1",
-    "@teacss/postcss-whitespace": "^0.1.0-alpha.1",
+    "@teacss/postcss-breakpoints": "^0.1.0",
+    "@teacss/postcss-whitespace": "^0.1.0",
     "autoprefixer": "^10.4.21",
     "postcss-combine-duplicated-selectors": "^10.0.3",
     "postcss-custom-media": "^11.0.6",
